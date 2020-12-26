@@ -42,7 +42,7 @@ class Node(object):
 
     def __gt__(self, other):
         return self.value > other.value
-    # this function make nodes comparable!
+    # this function makes nodes comparable!
 
 
 # function for encoding a string
