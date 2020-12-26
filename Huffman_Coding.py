@@ -2,8 +2,6 @@ import heapq  # used for merging the min nodes of a nodes list
 import sys  # sys function to get the size of en-/decoded data
 
 # first create the Node class to enable huffman logic
-
-
 class Node(object):
 
     def __init__(self, value=None, character=None):
@@ -126,7 +124,7 @@ def huffman_encoding(data):
 
     return encode(traverse(nodes[-1], code,
                            sum_letter, result), new_string), nodes[-1]
-    # passing the huffman encode and the tree for decoding
+    # return the huffman encode and the tree for decoding
 
 
 # function for decoding a string
